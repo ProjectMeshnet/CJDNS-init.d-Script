@@ -82,12 +82,9 @@ Delete() {
             echo "**Exiting uninstall of cjdns. You have done nothing :)..."
         ;;
     esac
+}
 
-if [ $# -eq 0 ]; then  
-    Usage
-    exit 1
-else if [ $# -gt 1 ]; then
-    echo "Too Many Arguments"
+if [ $# -ne 1 ]; then  
     Usage
     exit 1
 fi
